@@ -1,0 +1,5 @@
+# Feedback
+10.8
+In challenge 2.1/2.2, you define many functions, k1, k2, k3, k4. Now, usually defining functions to do specific jobs is good, but in this case, I would not have done what you have done here. The runge-kutta 4th order algorithm is a series of commands that shouldn't be broken apart into functions like this (you will rarely if every call k2 all by itself). And I think that your functions are problematic - you refer to variables that are not in the functions scope. You got away with it because you are executing the whole program in a notebook, which has super flexible workspace behavior, but I'm sure that it would not run smoothly outside of a python notebook.
+In 2.3, I couldn't run the last of your code block. The problem is buried in the last two if statements. You should run through those and see what the problem is, come see me if you need help.
+2.4 looks good, just don't forget to have the program produce an answer to the question - which angle gives the longest range?
